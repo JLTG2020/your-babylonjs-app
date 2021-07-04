@@ -1,0 +1,11 @@
+Model Information:
+* title:	Heckler & Koch USP Pistol
+* source:	https://sketchfab.com/3d-models/heckler-koch-usp-pistol-972e3643000246e8959a6df509557bcc
+* author:	Urpo (https://sketchfab.com/Urpo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Heckler & Koch USP Pistol" (https://sketchfab.com/3d-models/heckler-koch-usp-pistol-972e3643000246e8959a6df509557bcc) by Urpo (https://sketchfab.com/Urpo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

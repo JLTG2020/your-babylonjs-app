@@ -3,10 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 import SceneComponent from './SceneComponent';
+import ViewerComponent from './ViewerComponent';
+import { SceneWithSpinningBoxes } from './SpinningBox'
 
 function App() {
   return (
     <div className="App">
+      <div>dsf </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,7 +24,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <SceneComponent antialias id='my-canvas' />
+      {/* <SceneComponent antialias id='my-canvas' /> */}
+      <ViewerComponent />
+      {/* <SceneWithSpinningBoxes /> */}
     </div>
   );
 }
