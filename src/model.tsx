@@ -5,14 +5,12 @@ import { Vector3, Color3, int } from "@babylonjs/core";
 import { ActionManager, SetValueAction } from "@babylonjs/core/Actions";
 import ScaledModelWithProgress from "./ScaledModelWithProgress";
 
-interface IProp {
-
-};
+interface IProp {}
 
 interface IState {
-    avocadoYPos: int,
-    avocadoScaling: int,
-};
+  avocadoYPos: int;
+  avocadoScaling: int;
+}
 
 // export default { title: "Models" };
 export class WithModel extends Component<IProp, IState> {
@@ -59,7 +57,7 @@ export class WithModel extends Component<IProp, IState> {
     }));
   }
 
-  onModelLoaded = (model: { meshes: any[]; }) => {
+  onModelLoaded = (model: { meshes: any[] }) => {
     let mesh = model.meshes[1];
     mesh.actionManager = new ActionManager(mesh._scene);
     mesh.actionManager.registerAction(
@@ -101,8 +99,10 @@ export class WithModel extends Component<IProp, IState> {
           />
 
           <ScaledModelWithProgress
-            rootUrl={`${baseUrl}BoomBox/glTF/`}
-            sceneFilename="BoomBox.gltf"
+            // rootUrl={`${baseUrl}BoomBox/glTF/`}
+            // sceneFilename="BoomBox.gltf"
+            rootUrl='./ss/'
+            sceneFilename='scene.gltf'
             scaleTo={3}
             progressBarColor={Color3.FromInts(255, 165, 0)}
             center={new Vector3(2.5, 0, 0)}
@@ -118,9 +118,11 @@ export class WithModel extends Component<IProp, IState> {
             }
           >
             <Model
-              name='model11'
-              rootUrl={`${baseUrl}Avocado/glTF/`}
-              sceneFilename="Avocado.gltf"
+              name="model"
+              // rootUrl={`${baseUrl}Avocado/glTF/`}
+              // sceneFilename="Avocado.gltf"
+              rootUrl='./ss/'
+              sceneFilename='scene.gltf'
               scaleToDimension={this.state.avocadoScaling}
               position={new Vector3(-2.5, this.state.avocadoYPos, 0)}
             />

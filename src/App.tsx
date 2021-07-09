@@ -7,6 +7,7 @@ import ViewerComponent from './ViewerComponent';
 import { SceneWithSpinningBoxes } from './SpinningBox'
 import { MyScene } from './model-loader';
 import { WithModel } from './model';
+import TestComponent from './testComponent';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
       {/* <SceneComponent antialias id='my-canvas' /> */}
       {/* <ViewerComponent /> */}
       {/* <SceneWithSpinningBoxes /> */}
-      {/* <WithModel /> */}
-      <MyScene />
+      <WithModel />
+      {/* <MyScene /> */}
+      {/* <TestComponent /> */}
     </div>
   );
 }

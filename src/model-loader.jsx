@@ -46,13 +46,14 @@ const MyFallback = () => {
   useBeforeRender((scene) => {
     if (boxRef !== undefined) {
       if (boxRef.current !== undefined) {
-        var deltaTimeInMillis = scene.getEngine().getDeltaTime();
+        // var deltaTimeInMillis = scene.getEngine().getDeltaTime();
 
-        const rpm = 10;
-        boxRef.current = new Vector3(1,2,3);
-        boxRef.current.rotation.x = Math.PI / 4;
-        boxRef.current.rotation.y +=
-          (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+        // const rpm = 10;
+        // boxRef.current = new Vector3(1,2,3);
+        // boxRef.current.rotation.x = Math.PI / 4;
+        // boxRef.current.rotation.y +=
+        //   (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+        console.log('========' +boxRef.current);
       }
     }
   });
