@@ -1145,7 +1145,7 @@
   dependencies:
     tslib ">=1.10.0"
 
-"@babylonjs/gui@^4.2.0":
+"@babylonjs/gui@4.2.0", "@babylonjs/gui@^4.2.0":
   version "4.2.0"
   resolved "https://registry.nlark.com/@babylonjs/gui/download/@babylonjs/gui-4.2.0.tgz#c2a35ca6724759731fe0c4ddbfe2490301847f93"
   integrity sha1-wqNcpnJHWXMf4MTdv+JJAwGEf5M=
@@ -1153,10 +1153,40 @@
     "@babylonjs/core" "4.2.0"
     tslib ">=1.10.0"
 
+"@babylonjs/inspector@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.nlark.com/@babylonjs/inspector/download/@babylonjs/inspector-4.2.0.tgz#70d901729097f79b166decccfc8ed2195d2b1c35"
+  integrity sha1-cNkBcpCX95sWbezM/I7SGV0rHDU=
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    "@babylonjs/gui" "4.2.0"
+    "@babylonjs/loaders" "4.2.0"
+    "@babylonjs/materials" "4.2.0"
+    "@babylonjs/serializers" "4.2.0"
+    babylonjs-gltf2interface "4.2.0"
+    tslib ">=1.10.0"
+
 "@babylonjs/loaders@4.2.0", "@babylonjs/loaders@^4.2.0":
   version "4.2.0"
   resolved "https://registry.nlark.com/@babylonjs/loaders/download/@babylonjs/loaders-4.2.0.tgz#a9902dc277c16dcd22cd1907f86310e211c247cb"
   integrity sha1-qZAtwnfBbc0izRkH+GMQ4hHCR8s=
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    babylonjs-gltf2interface "4.2.0"
+    tslib ">=1.10.0"
+
+"@babylonjs/materials@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.nlark.com/@babylonjs/materials/download/@babylonjs/materials-4.2.0.tgz#8d889e49f6824e4fc62622b221f36ab0b8334d6e"
+  integrity sha1-jYieSfaCTk/GJiKyIfNqsLgzTW4=
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    tslib ">=1.10.0"
+
+"@babylonjs/serializers@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.nlark.com/@babylonjs/serializers/download/@babylonjs/serializers-4.2.0.tgz#ca8c9b773c1985e8b49790ec65f6fdcf4cea0a49"
+  integrity sha1-yoybdzwZhei0l5DsZfb9z0zqCkk=
   dependencies:
     "@babylonjs/core" "4.2.0"
     babylonjs-gltf2interface "4.2.0"
