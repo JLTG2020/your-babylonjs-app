@@ -1,13 +1,14 @@
-import { Vector3 } from "@babylonjs/core";
-import { viewerManager, DefaultViewer } from "@babylonjs/viewer";
 import React, { Suspense, useEffect, useRef } from "react";
-import { Model, Scene, Engine, ArcRotateCamera, HemisphericLight } from "react-babylonjs";
+import { Vector3 } from "@babylonjs/core";
+import { Model, Scene, Engine } from "react-babylonjs";
+import "@babylonjs/inspector";
+
 
 const ViewerComponent: React.FC = () => {
-
   return (
     <Engine antialias adaptToDeviceRatio canvasId="babylonJS">
-      <Scene>
+      <Scene
+      >
         <arcRotateCamera
           name="camera1"
           alpha={Math.PI / 2}
@@ -21,19 +22,19 @@ const ViewerComponent: React.FC = () => {
           intensity={0.7}
           direction={Vector3.Up()}
         />
-        {/* <Suspense
+        <Suspense
           fallback={
-            <box name="fallback" position={new Vector3(-2.5, -1.5, 0)} />
+            <box name="fallback" position={new Vector3(0, 0, 0)} />
           }
-        > */}
+        >
           <Model
             name="model"
             sceneFilename="scene.gltf"
-            scaleToDimension={3.0}
-            rootUrl="src/ss/"
-            position={new Vector3(-2.5, -1.5, 0)}
+            scaleToDimension={5.0}
+            rootUrl="./cy/"
+            position={new Vector3(0, -2.5, 0)}
           />
-        {/* </Suspense> */}
+        </Suspense>
       </Scene>
     </Engine>
   );

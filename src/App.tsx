@@ -28,9 +28,9 @@ function App() {
         </a>
       </header> */}
       {/* <SceneComponent antialias id='my-canvas' /> */}
-      {/* <ViewerComponent /> */}
+      <ViewerComponent />
       {/* <SceneWithSpinningBoxes /> */}
-      <WithModel />
+      {/* <WithModel /> */}
       {/* <MyScene /> */}
       {/* <TestComponent /> */}
     </div>

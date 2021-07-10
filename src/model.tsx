@@ -98,16 +98,16 @@ export class WithModel extends Component<IProp, IState> {
             direction={Vector3.Up()}
           />
 
-          <ScaledModelWithProgress
+          {/* <ScaledModelWithProgress
             // rootUrl={`${baseUrl}BoomBox/glTF/`}
             // sceneFilename="BoomBox.gltf"
-            rootUrl='./ss/'
+            rootUrl='./sl/'
             sceneFilename='scene.gltf'
             scaleTo={3}
             progressBarColor={Color3.FromInts(255, 165, 0)}
             center={new Vector3(2.5, 0, 0)}
             onModelLoaded={this.onModelLoaded}
-          />
+          /> */}
 
           <Suspense
             fallback={
@@ -121,7 +121,7 @@ export class WithModel extends Component<IProp, IState> {
               name="model"
               // rootUrl={`${baseUrl}Avocado/glTF/`}
               // sceneFilename="Avocado.gltf"
-              rootUrl='./ss/'
+              rootUrl='./sa/'
               sceneFilename='scene.gltf'
               scaleToDimension={this.state.avocadoScaling}
               position={new Vector3(-2.5, this.state.avocadoYPos, 0)}
